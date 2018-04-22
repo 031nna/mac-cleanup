@@ -22,6 +22,9 @@ echo 'Empty the Trash on all mounted volumes and the main HDD...'
 sudo rm -rfv /Volumes/*/.Trashes &>/dev/null
 sudo rm -rfv ~/.Trash &>/dev/null
 
+echo 'Cleanup .DS_Store files…'
+sudo find . -type f -name '*.DS_Store' -ls -delete
+
 echo 'Clear System Log Files...'
 sudo rm -rfv /private/var/log/asl/*.asl &>/dev/null
 sudo rm -rfv /Library/Logs/DiagnosticReports/* &>/dev/null
