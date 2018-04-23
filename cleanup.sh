@@ -60,6 +60,8 @@ docker rmi -f $(docker images -q --filter 'dangling=true')
 echo 'Purge inactive memory...'
 sudo purge
 
+echo 'reindex spotlight...'
+sudo mdutil -E /
 clear && echo 'Success!'
 
 newAvailable=$(df / | tail -1 | awk '{print $4}')
