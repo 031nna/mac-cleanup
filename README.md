@@ -1,6 +1,11 @@
 # mac-cleanup
 Cleanup script for OSX
 
+use without installing
+```bash
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/031nna/mac-cleanup/master/cleanup.sh)"
+```
+
 **It does the following cleanup tasks:**
 * Empty the Trash on all mounted volumes and the main HDD
 * Clear System Log Files
